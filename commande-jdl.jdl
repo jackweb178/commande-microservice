@@ -1,0 +1,26 @@
+entity Product {
+  title String required,
+  price BigDecimal required min(0),
+  image ImageBlob
+}
+
+entity Commande {
+  title String required,
+  content TextBlob required,
+  date Instant required,
+  dateDelivry Instant required
+}
+
+entity Fournisseur {
+  entreprisename String required,
+  description TextBlob required,
+  date Instant required,
+}
+
+relationship ManyToMany {
+  Commande{fournisseur(entreprisename)} to Fournisseur{commande}
+}
+
+relationship ManyToMany {
+  Commande{product(title)} to Product{commande}
+}

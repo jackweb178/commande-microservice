@@ -1,0 +1,64 @@
+{
+  "name": "Commande",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "content",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "Instant",
+      "fieldValidateRules": [
+        "required"
+      ]
+    },
+    {
+      "fieldName": "dateDelivry",
+      "fieldType": "Instant",
+      "fieldValidateRules": [
+        "required"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "fournisseur",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "fournisseur",
+      "otherEntityField": "entreprisename",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "product",
+      "otherEntityRelationshipName": "commande",
+      "relationshipName": "product",
+      "otherEntityField": "title",
+      "ownerSide": true
+    }
+  ],
+  "changelogDate": "20210327111548",
+  "entityTableName": "commande",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "commande",
+  "applications": "*",
+  "microserviceName": "commande"
+}

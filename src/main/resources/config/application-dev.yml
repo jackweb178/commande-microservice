@@ -19,12 +19,21 @@ logging:
     io.github.jhipster: DEBUG
     gn.balde.jee.commande: DEBUG
 
+#eureka:
+#instance:
+#prefer-ip-address: true
+#client:
+#service-url:
+#defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+
 eureka:
-  instance:
-    prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://admin:${jhipster.registry.password}@localhost:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+    healthcheck:
+      enabled: true
+  instance:
+    hostname: localhost
 
 spring:
   profiles:
@@ -77,6 +86,8 @@ spring:
     locator:
       discovery:
         enabled: true
+  application:
+    name: Commande-Microservice
 
 server:
   port: 8017

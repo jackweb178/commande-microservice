@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "gn.balde.jee.commande"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "microservice",
+    "baseName": "commande",
+    "packageName": "gn.balde.jee.commande",
+    "packageFolder": "gn/balde/jee/commande",
+    "serverPort": "8017",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTYzOTE4ZTE4MDkyZDM0ZDZjYTJiYTBmYjM1NzgwNGE1MGY1Mjk4Y2Y1MjVhYjc3ZTljNGNlMzQyOWE5NzNkOWU1MjcxMDNiMWE1YjcyY2FhYTFmMmFmMDQ0MGE5YmZmOTY2YTEyMGRjMzhhMDM0ZDhlOWU1ZjQ4MGVkZTllMzk=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1616843137822,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
